@@ -1,0 +1,32 @@
+es:
+  refinery:
+    plugins:
+      games:
+        title: Games
+#        article: masculino/femenino
+    games:
+      admin:
+        games:
+          actions:
+            create_new: Crear nuevo game
+            reorder: Reordenar games
+            reorder_done: Reordenación de games completada
+          records:
+            title: Games
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay games todavía. Pulsa en "Crear nuevo Game" para crear tu primer game.
+          game:
+            view_live_html: Ver este game como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este game
+            delete: Borrar este game para siempre
+      games:
+        show:
+          other: Otros games
+  activerecord:
+    attributes:
+      'refinery/games/game':
+        name: Name
+        plataform: Plataform
+        released_on: Released On
+        photo: Photo
+        description: Description

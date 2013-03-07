@@ -1,0 +1,31 @@
+sk:
+  refinery:
+    plugins:
+      games:
+        title: Games
+    games:
+      admin:
+        games:
+          actions:
+            create_new: Pridať Game
+            reorder: Preusporiadať Games
+            reorder_done: Koniec radenia Games
+          records:
+            title: Games
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Games. Kliknite na "Pridať Game" pre pridanie prvého game.
+          game:
+            view_live_html: Zobraziť náhľad game<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť game
+            delete: Zmazať game
+      games:
+        show:
+          other: Daľšie Games
+  activerecord:
+    attributes:
+      'refinery/games/game':
+        name: Name
+        plataform: Plataform
+        released_on: Released On
+        photo: Photo
+        description: Description

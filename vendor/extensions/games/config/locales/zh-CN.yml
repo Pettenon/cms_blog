@@ -1,0 +1,33 @@
+zh-CN:
+  refinery:
+    plugins:
+      games:
+        title: Games
+    games:
+      admin:
+        games:
+          actions:
+            create_new: 建立新的 Game
+            reorder: 对 Games 重新排序
+            reorder_done: 对 Games 的重新排序结束
+          records:
+            title: Games
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Games yet. Click "Add New Game" to add your first game.
+            no_items_yet: 目前没有 Games . 点击 "Add New Game" 创建一个game.
+          game:
+            view_live_html: 查看 game 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 game
+            delete: 永久删除 game
+      games:
+        show:
+          other: 其他 Games
+  activerecord:
+    attributes:
+      'refinery/games/game':
+        name: Name
+        plataform: Plataform
+        released_on: Released On
+        photo: Photo
+        description: Description

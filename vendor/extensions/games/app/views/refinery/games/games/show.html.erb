@@ -1,0 +1,16 @@
+<section id="body_content">
+  <section id="body">
+    <div id="game">
+      <%= image_fu @game.photo, "400x400", class: "image-align-left" %>
+      <h1><%= @game.name %></h1>
+      <p>
+        <b>Dimensions:</b> <%= @game.plataform %>
+      </p>
+      <p>
+        <b>Manufacture Date:</b> <%= @game.released_on.year %>
+      </p>
+      <%= raw @game.description %>
+      <p class="back"><%= link_to "Back to Games", refinery.games_games_path %></p>
+    </div>
+  </section>
+</section>

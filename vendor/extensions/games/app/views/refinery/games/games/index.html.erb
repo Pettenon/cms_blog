@@ -1,0 +1,14 @@
+<section id="body_content">
+  <section id="body">
+    <div id="pianos">
+      <% @games.each do |game| %>
+      <div class="piano">
+        <%= image_fu game.photo, "200x200", class: "image-align-#{cycle("left", "right")}" %>
+        <h2><%= game.name %></h2>
+        <%=raw game.description %>
+        <p class="more_info"><%= link_to "More Information", refinery.games_game_path(game) %></p>
+      </div>
+      <% end %>
+    </div>
+  </section>
+</section>

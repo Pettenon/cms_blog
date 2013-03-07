@@ -1,0 +1,31 @@
+fr:
+  refinery:
+    plugins:
+      games:
+        title: Games
+    games:
+      admin:
+        games:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Game
+            reorder: Réordonner les Games
+            reorder_done: Fin de réordonnancement des Games
+          records:
+            title: Games
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Game. Cliquer sur "Créer un(e) nouve(au/l/lle) Game" pour créer votre premi(er/ère) game.'
+          game:
+            view_live_html: Voir ce(t/tte) game <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) game
+            delete: Supprimer définitivement ce(t/tte) game
+      games:
+        show:
+          other: Autres Games
+  activerecord:
+    attributes:
+      'refinery/games/game':
+        name: Name
+        plataform: Plataform
+        released_on: Released On
+        photo: Photo
+        description: Description
